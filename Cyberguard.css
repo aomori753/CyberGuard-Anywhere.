@@ -1,0 +1,94 @@
+body {
+    font-family: 'Inter', sans-serif; /* Using Inter font as suggested */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; /* Dark background */
+    color: #ffffff; /* White text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+header {
+    background-color: #333333; /* Darker grey */
+    color: #00e676; /* Green accent */
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid #00c853; /* Green border */
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+section {
+    padding: 2rem;
+    max-width: 800px; /* Limit content width */
+    margin: 1rem auto; /* Center sections with margin */
+    background-color: #2a2a2a; /* Slightly lighter dark */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.purpose h2, .features h2, .cta h2 {
+    color: #00e676; /* Green accent for headings */
+    border-bottom: 1px solid #00c853; /* Green border under headings */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.features ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+}
+
+.features li {
+    background-color: #3a3a3a; /* Even lighter dark for list items */
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    border-left: 4px solid #00e676; /* Green accent on the left */
+    border-radius: 4px; /* Rounded corners for list items */
+}
+
+.cta {
+    text-align: center;
+}
+
+#learnMoreBtn {
+    background-color: #00e676; /* Green button */
+    color: #1e1e1e; /* Dark text */
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#learnMoreBtn:hover {
+    background-color: #00c853; /* Darker green on hover */
+}
+
+footer {
+    text-align: center;
+    margin-top: auto; /* Push footer to the bottom */
+    padding: 1rem 0;
+    color: #aaaaaa; /* Lighter grey for footer text */
+    width: 100%;
+}
+
+/* Basic responsiveness */
+@media (max-width: 768px) {
+    section {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    #learnMoreBtn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
